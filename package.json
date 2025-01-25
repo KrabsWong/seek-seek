@@ -1,7 +1,7 @@
 {
-  "name": "seek-sage",
+  "name": "seek-seek",
   "version": "1.0.0",
-  "description": "A powerful in-page text search extension that helps you find wisdom in web pages",
+  "description": "A powerful in-page text search extension for finding text in web pages",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "SeekSage",
+  "name": "Seek Seek",
   "version": "1.0",
-  "description": "A powerful in-page text search extension that helps you find wisdom in web pages",
+  "description": "A powerful in-page text search extension for finding text in web pages",
   "default_locale": "en",
   "permissions": [
     "storage",
@@ -14,10 +14,7 @@
   },
   "commands": {
     "_execute_action": {
-      "suggested_key": {
-        "default": "Shift+Alt+F"
-      },
-      "description": "Open SeekSage"
+      "description": "Open Seek Seek"
     }
   },
   "content_scripts": [
