@@ -17,6 +17,8 @@ export default defineConfig({
         await fs.copy(resolve(__dirname, 'src/styles.css'), resolve(__dirname, 'dist/styles.css'))
         // 复制popup.html
         await fs.copy(resolve(__dirname, 'popup.html'), resolve(__dirname, 'dist/popup.html'))
+        // 复制assets目录
+        await fs.copy(resolve(__dirname, 'src/assets'), resolve(__dirname, 'dist/assets'))
       }
     }
   ],
