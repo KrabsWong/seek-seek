@@ -1,0 +1,23 @@
+{
+  "searchPlaceholder": {
+    "message": "输入搜索文本..."
+  },
+  "searchButton": {
+    "message": "搜索"
+  },
+  "clearButton": {
+    "message": "清除"
+  },
+  "caseSensitive": {
+    "message": "区分大小写"
+  },
+  "shortcuts": {
+    "message": "快捷键："
+  },
+  "customizeShortcut": {
+    "message": "自定义快捷键"
+  },
+  "noMatches": {
+    "message": "未找到匹配项"
+  }
+}

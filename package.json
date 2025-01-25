@@ -1,0 +1,18 @@
+{
+  "name": "seek-sage",
+  "version": "1.0.0",
+  "description": "A powerful in-page text search extension that helps you find wisdom in web pages",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "fs-extra": "^11.3.0",
+    "vite": "^4.4.9"
+  }
+}

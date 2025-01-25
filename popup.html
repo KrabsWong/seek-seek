@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SeekSage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="ss-popup">
+  <div id="app">
+    <div class="ss-search-container">
+      <input type="text" id="ss-searchInput" placeholder="搜索...">
+      <button id="ss-searchButton">搜索</button>
+      <button id="ss-clearButton">清除</button>
+      <div class="ss-options">
+        <label>
+          <input type="checkbox" id="caseSensitive">
+          <span id="caseSensitiveText">区分大小写</span>
+        </label>
+      </div>
+      <div class="ss-status">
+        <span id="matchCount"></span>
+      </div>
+      <div class="ss-shortcuts">
+        <span id="shortcutsText">快捷键：</span>
+        <span id="shortcutText"></span>
+        <a href="#" id="ss-customizeShortcut">自定义</a>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

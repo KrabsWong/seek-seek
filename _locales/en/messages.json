@@ -1,0 +1,23 @@
+{
+  "searchPlaceholder": {
+    "message": "Enter search text..."
+  },
+  "searchButton": {
+    "message": "Search"
+  },
+  "clearButton": {
+    "message": "Clear"
+  },
+  "caseSensitive": {
+    "message": "Case Sensitive"
+  },
+  "shortcuts": {
+    "message": "Shortcut:"
+  },
+  "customizeShortcut": {
+    "message": "Customize shortcut"
+  },
+  "noMatches": {
+    "message": "No matches found"
+  }
+}
