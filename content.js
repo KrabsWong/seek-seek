@@ -24,7 +24,7 @@ function clearHighlights() {
 // 检查元素是否可见
 function isElementVisible(element) {
   if (!element || element.nodeType !== 1) return true;
-  
+
   const style = window.getComputedStyle(element);
   if (style.display === 'none' || style.visibility === 'hidden' || style.opacity === '0') {
     return false;
@@ -55,8 +55,8 @@ function highlightText(node, regex) {
       return 0;
     }
     // 检查是否是不需要处理的标签
-    if (['script', 'style', 'noscript', 'textarea'].includes(node.tagName.toLowerCase()) || 
-        node.className === 'ss-highlight') {
+    if (['script', 'style', 'noscript', 'textarea'].includes(node.tagName.toLowerCase()) ||
+      node.className === 'ss-highlight') {
       return 0;
     }
     // 处理子节点
@@ -144,22 +144,22 @@ function searchText(query, caseSensitive) {
   // 始终使用大小写敏感的标志
   const flags = caseSensitive ? 'g' : 'gi';
   const regex = new RegExp(query.replace(/[.*+?^${}()|[]]/g, '\$&'), flags);
-  
+
   const count = highlightText(document.body, regex);
   currentHighlightIndex = count > 0 ? 0 : -1;
-  
+
   if (count > 0) {
     const currentHighlight = currentHighlights[currentHighlightIndex];
     currentHighlight.classList.add('current');
     currentHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
-  
+
   return { count, current: count > 0 ? 1 : 0 };
 }
 
 function goToNextMatch() {
   if (currentHighlights.length === 0) return { count: 0, current: 0 };
-  
+
   // 移除上一个选中项的样式和角标
   if (currentHighlightIndex >= 0 && currentHighlightIndex < currentHighlights.length) {
     currentHighlights[currentHighlightIndex].classList.remove('current');
@@ -167,14 +167,14 @@ function goToNextMatch() {
 
   // 更新当前索引
   currentHighlightIndex = (currentHighlightIndex + 1) % currentHighlights.length;
-  
+
   // 为当前选中项添加样式和角标
   const currentHighlight = currentHighlights[currentHighlightIndex];
   currentHighlight.classList.add('current');
-  
+
   // 滚动到当前选中项
   currentHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  
+
   return {
     count: currentHighlights.length,
     current: currentHighlightIndex + 1
@@ -183,7 +183,7 @@ function goToNextMatch() {
 
 function goToPrevMatch() {
   if (currentHighlights.length === 0) return { count: 0, current: 0 };
-  
+
   // 移除上一个选中项的样式和角标
   if (currentHighlightIndex >= 0 && currentHighlightIndex < currentHighlights.length) {
     currentHighlights[currentHighlightIndex].classList.remove('current');
@@ -191,14 +191,14 @@ function goToPrevMatch() {
 
   // 更新当前索引
   currentHighlightIndex = (currentHighlightIndex - 1 + currentHighlights.length) % currentHighlights.length;
-  
+
   // 为当前选中项添加样式和角标
   const currentHighlight = currentHighlights[currentHighlightIndex];
   currentHighlight.classList.add('current');
-  
+
   // 滚动到当前选中项
   currentHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  
+
   return {
     count: currentHighlights.length,
     current: currentHighlightIndex + 1
