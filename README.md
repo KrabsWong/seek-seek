@@ -13,6 +13,7 @@ A powerful Chrome extension for finding text in web pages.
 - 🔤 Case sensitivity: Optional case-sensitive search
 
 - 🎨 Highlight matches: Clear visual highlighting of search results
+- 🌐 Multi-language support: English, Japanese, and Chinese
 
 ## How to Use
 

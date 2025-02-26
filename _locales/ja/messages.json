@@ -1,0 +1,23 @@
+{
+  "searchPlaceholder": {
+    "message": "検索テキストを入力..."
+  },
+  "searchButton": {
+    "message": "検索"
+  },
+  "clearButton": {
+    "message": "クリア"
+  },
+  "caseSensitive": {
+    "message": "大文字小文字を区別"
+  },
+  "shortcuts": {
+    "message": "ショートカット:"
+  },
+  "customizeShortcut": {
+    "message": "ショートカットをカスタマイズ"
+  },
+  "noMatches": {
+    "message": "一致する結果が見つかりません"
+  }
+}
